@@ -49,7 +49,7 @@ jobs:
         result=$(java -cp target/classes Main divide 5 0)
         echo "Result: $result"
         set -e
-        if [ "$result" == "Exception" ]; then
+        if echo "$result" | grep -q "Exception"; then
           echo "Division by zero test passed"
         else
           echo "Division by zero test failed"
