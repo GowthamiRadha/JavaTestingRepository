@@ -19,7 +19,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Compile
-      run: javac -d target/classes src/main/java/*.java
+      run: javac -d target/classes Testing/src/main/java/*.java
 
     - name: Test Addition
       run: |
