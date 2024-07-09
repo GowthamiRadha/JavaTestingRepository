@@ -10,10 +10,6 @@ public class Main {
                 break;
             case "subtract":
                 result = ArithmeticOperations.subtract(a, b);
-                if(result==Integer.MIN_VALUE) {
-                    System.out.println("Exception");
-                    return;
-                }
                 break;
             case "multiply":
                 result = ArithmeticOperations.multiply(a, b);

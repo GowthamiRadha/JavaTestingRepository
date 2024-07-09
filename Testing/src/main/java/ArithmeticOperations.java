@@ -5,9 +5,6 @@ public class ArithmeticOperations {
     }
 
     public static int subtract(int a, int b) {
-         if (b == 0) {
-            return Integer.MIN_VALUE;         // Return a special value indicating an error (could also be 0 or any other sentinel value)
-        }
         return a-b;
     }
 
@@ -16,6 +13,10 @@ public class ArithmeticOperations {
     }
 
     public static int divide(int a, int b) {
+        if (b == 0) {
+            System.out.println("Exception");
+            return Integer.MIN_VALUE;
+        }
         return a/b;
     }
 }
